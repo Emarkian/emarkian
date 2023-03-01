@@ -1,0 +1,68 @@
+.apart{
+    background-image: linear-gradient(rgb(164, 233, 101),rgb(0,120,0));
+    margin: 3rem auto;
+    border: 1px solid green;
+    width: 200px;
+    height: 300px;
+}
+
+.Doc_cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.something{
+    width: 100%;
+    position: relative;
+}
+.Doc_cont>h3{
+    margin: 0 auto;
+}
+.Doc_cont{
+    height: 100%;
+    width: 100%;
+    color: lightgreen;
+    text-align: center;
+    text-decoration: none;
+}
+.Doc_cont h4{
+    color: lightgreen;
+  }
+@media screen and (min-width:871px){
+    .apartment{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+    }
+}
+@media screen and (max-width:870px) and (min-width:456px){
+    .apartment{
+        display: grid;
+        grid-template-columns: auto auto ;
+    }
+}
+@media screen and (max-width:455px){
+    .apartment{
+        display: grid;
+        grid-template-columns: auto ;
+    }
+    .apart{
+        background-image: linear-gradient(rgb(164, 233, 101),rgb(0,120,0));
+        margin:2rem auto;
+        border: 1px solid green;
+    }
+}
+.phonekata{
+    display: none;
+}
+@media screen and (max-width:440px){
+    .phonekata{
+        display: block;
+    }
+    .compkata{
+        display: none;
+    }
+}

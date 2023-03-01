@@ -1,0 +1,45 @@
+h1,h3{
+    text-align: center;
+}
+.image{
+    margin: 1rem auto;
+    width: 100%;
+}
+img{
+    height: 100%;
+    width: 100%;
+}
+.cont{
+    margin: 1rem auto;
+    width: 800px;
+}
+.specialImage{
+    margin: 0 auto;
+    width: 100%;
+}
+@media screen and (max-width:830px) and (min-width:626px){
+    .cont{
+        width:600px
+    }
+}
+@media screen and (max-width:635px) and (min-width:421px){
+    .cont{
+        width:400px
+    }
+}
+@media screen and (max-width:420px){
+    .cont{
+        width:280px
+    }
+}
+.phonekata{
+  display: none;
+}
+@media screen and (max-width:520px){
+  .phonekata{
+      display: block;
+  }
+  .compkata{
+      display: none;
+  }
+}

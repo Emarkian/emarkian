@@ -1,0 +1,280 @@
+html{
+  scroll-behavior: smooth;
+  height: 100%;
+  width: 100%;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+section{
+  height: 100%;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 190px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content-phone {
+  display: none;
+}
+.dropdown-content-phone a{
+  display: block  ;
+}
+.dropdown-content a {
+  float: none;
+  color: green;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.menlist:hover .dropdown-content {
+  display: block;
+}
+
+#index{
+  z-index: 100;
+  position: fixed;
+  padding-top: 1rem;
+  float: right;
+  width: 100%;
+}
+.index_cont{
+  padding-right: 3rem;
+  float: right;
+  width: fit-content;
+}
+
+.menlist{
+  display: inline-block;
+  color: green;
+  text-decoration: none;
+}
+p{
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+a{
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 1rem;
+  display: inline-block;
+  color: green;
+  text-decoration: none;
+}
+.burger{
+  text-align: start;
+}
+.burger a{
+  font-size: 20pt;
+  cursor: pointer;
+}
+a{
+  cursor: pointer;
+}
+@media screen and (min-width:1025px){
+  a{
+    font-size: 1.5rem;
+  }
+  .dropdown-content a {
+    font-size:1rem
+  }
+  h1{
+      margin :0;
+      font-size: 10rem;
+  }
+  p{
+      font-size: 20pt;
+  }
+  a:hover{
+      border-bottom: 2px solid limegreen;
+      transition: ease-in-out 0.2s;
+  }
+  #phone{
+      display: none;
+  }
+  #ipad_comp{
+      display: block;
+  }
+  .perkataan{
+      margin: 0 auto;
+      position: relative;
+      top: 50%;
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      color: green;
+      padding-left:4rem; 
+      margin: 0;
+  }
+}
+@media screen and (max-width:1024px) and (min-width:820px){
+  a,p{
+      font-size: 16pt;
+  }
+  .dropdown-content a {
+    font-size:14pt;
+  }
+  h1{
+      margin :0;
+      font-size: 7rem;
+  }
+  a:hover{
+      border-bottom: 2px solid limegreen;
+      transition: ease-in-out 0.2s;
+  }
+  #phone{
+      display: none;
+  }
+  #ipad_comp{
+      display: block;
+  }
+  .perkataan{
+      margin: 0 auto;
+      position: relative;
+      top: 50%;
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      color: green;
+      padding-left:4rem; 
+      margin: 0;
+  }
+}
+@media screen and (max-width:819px) and (min-width:677px){
+  a,p{
+      font-size: 12pt;
+  }
+  .dropdown-content a {
+    font-size:10pt;
+  }
+  h1{
+      margin :0;
+      font-size: 4rem;
+  }
+  a:hover{
+      border-bottom: 2px solid limegreen;
+      transition: ease-in-out 0.2s;
+  }
+  #phone{
+      display: none;
+  }
+  #ipad_comp{
+      display: block;
+  }
+  .perkataan{
+      margin: 0 auto;
+      position: relative;
+      top: 50%;
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      color: green;
+      padding-left:4rem; 
+      margin: 0;
+  }
+}
+@media only screen and (max-width:676px) and (min-width:320px){
+  p{
+      font-size: 12pt;
+  }
+  a{
+    font-size: 19pt;
+  }
+  h1{
+      margin :0;
+      font-size: 4rem;
+  }
+  #phone{
+      display: block;
+  }
+  .dropdown_phone{
+    color: white;
+  }
+  #list > a{
+    color: white;
+      padding: 1rem 0;
+      position: relative ;
+      display: block;
+      text-align: center;
+  }
+  .dropdown-content-phone a{
+    background-color: lightgreen;
+      font-size: 13pt !important;
+  }
+  .menlist_phone a{
+      width: 100%;
+      padding-left: 0;
+  }
+  .menlist_phone{
+      cursor: pointer;
+      display: block;
+      text-align: center;
+  }
+  .menlist_phone a:hover{
+      background-color: darkgreen;
+      color:white;
+  }
+  #list> a:hover{
+    background-color: lightgreen;
+    color: green;
+  }
+  #list .dropdown_phone:hover{
+      background-color: lightgreen;
+      color: green;
+  }
+  
+  #list{
+      overflow: hidden;
+      position: relative;
+      height: 100vh;
+      z-index: 200;
+      color:white;
+      background-color:darkgreen;
+      display: none;
+  }
+  #index{
+      z-index: 200;
+      padding: 0;
+  }
+  #ipad_comp{
+      display: none;
+  }
+  .perkataan{
+      margin: 0 auto;
+      top: 50%;
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      text-align: center;
+      position: relative;
+      color: green;
+  }
+}
+span{
+  background-color: yellow;
+  padding: 0.3rem;
+}

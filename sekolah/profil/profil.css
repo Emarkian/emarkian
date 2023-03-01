@@ -1,0 +1,196 @@
+@import url(https://fonts.googleapis.com/css?family=Alegreya&display=swap);
+html{
+  width:100%;
+  height: 100%;
+  scroll-behavior: smooth
+}
+body{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+section{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+.piagam li{
+  text-align: left;
+}
+li{
+  list-style-type: none;
+}
+.piagam li{
+  list-style-type: disc;
+}
+p,section h2,h3{
+  font-size: 1rem;
+  text-align: center;
+}
+ul,p,section h2,h3,li,td{
+  font-family: 'Alegreya';
+}
+
+/*image */
+img{
+  height: 100%;
+}
+
+/*responsive*/
+@media screen and (min-width: 935px){
+  ul,p,section h2,h3,li,td{
+    font-size: 1.1rem;
+  }
+}
+/*desktop*/
+@media screen and (min-width: 601px){
+  .pia > div ,.his>div {
+    margin:2rem;
+  }
+  .intro,.vml{
+    width: 100% ;
+    height: 100%;
+  }
+  /*intro*/
+  .conimage{
+    height: 100%;
+  }
+  .words{
+    height: 100%;
+  }
+  .content{
+    width: 90%;
+    margin: 0;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  /*visi misi andlagu*/
+  .vimi{
+    width:80%;
+  }
+  .conimage,.words{
+    float: left;
+    width: 50%;
+  }
+  .vm{
+    float: left;
+    width: calc(50% - 2.5px);
+    height: 90%;
+    border-right: 2.5px solid rgb(255, 191, 0);
+  }
+  .lik{
+    height:90%;
+    float: left;
+    width: calc(50% - 2.5px);
+    border-left: 2.5px solid rgb(255, 191, 0);
+  }
+  .lagu{
+    margin: 0;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  .vimi{
+    margin: 0;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  /*image*/
+  .image{
+    margin: 0;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+  }
+  /*piagam sekolah*/
+  .piagam{
+    padding: 1em;
+  }
+  /*history*/
+  table{
+    border-collapse: collapse;
+    margin: 1rem;
+  }
+  .data{
+    border-left: 1px solid rgb(255, 191, 0);
+    padding: 1rem;
+  }
+  .tahun{
+    border-right: 1px solid rgb(255, 191, 0);
+    width: 6vw;
+    padding: 1rem;
+    text-align: center;
+  }
+}
+
+/*phoone and ipad*/
+@media screen and (max-width: 600px){
+  .image{
+    margin: 0 auto;
+    width: 200px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+  }
+  .his>div {
+    margin:0.5rem;
+  }
+  .pia > div ,.moto,.vimi{
+    margin: 1rem;
+  }
+  .vm{
+    margin: 0 1rem;
+    border-bottom: 2.5px solid rgb(255, 191, 0);
+  }
+  .lik{
+    margin: 0 1rem;
+    border-top: 2.5px solid rgb(255, 191, 0);
+  }
+  .conimage,.words{
+    margin: 1rem;
+  }
+  /*piagam sekolah*/
+  .piagam{
+    padding: 0.2em;
+  }
+  /*history*/
+  table{
+    border-collapse: collapse;
+    margin: 0.2rem;
+  }
+  .data{
+    border-left: 1px solid rgb(255, 191, 0);
+    padding: 1rem;
+  }
+  .tahun{
+    border-right: 1px solid rgb(255, 191, 0);
+    padding: 1rem;
+    text-align: center;
+  }
+}
+.phonekata{
+  display: none;
+}
+@media screen and (max-width:440px){
+  .phonekata{
+      display: block;
+  }
+  .compkata{
+      display: none;
+  }
+}

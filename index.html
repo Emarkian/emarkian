@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="emarkian,Emarkian,markian,smk st mark,graduan,stmark,emajalah,majalah sekolah,magazine,school magazine">
+    <meta name="author" content="smk st mark">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css">
+    <title>Emarkian</title>
+  </head>
+  <body>
+    <header id="index">
+      <div class="index_cont" id="ipad_comp">
+        <div class="menlist">
+          <a class="dropdown">Sekolah</a>
+          <div class="dropdown-content">
+            <a href="sekolah/profil/profil.html">Profil Sekolah</a>
+            <a href="sekolah/org/org.html">Organisasi</a>
+            <a href="sekolah/kata/kata.html">Kata Alu-Aluam</a>
+          </div>
+        </div>
+        <a href="akt/akt.html" class="dropdown">Aktiviti</a>
+        <div class="menlist">
+          <a class="dropdown">Kokurikulum</a>
+          <div class="dropdown-content">
+            <a href="koko/uni/uni.html">Uniform</a>
+            <a href="koko/club/club.html">Kelab & Persatuan</a>
+            <a href="koko/rumah/rumah.html">Rumah Sukan</a>
+          </div>
+        </div>
+        <div class="menlist">
+          <a class="dropdown">Pelajar</a>
+          <div class="dropdown-content">
+            <a href="pel/peng/peng.html">Pengawas</a>
+            <a href="pel/kelas/kelas.html">Kelas</a>
+            <a href="pel/has/has.html">Hasil Pelajar</a>
+            <a href="pel/majpel/majpel.html">Majlis Pelajar</a>
+          </div>
+        </div>
+        <a href="sid/sid.html" class="dropdown">Sidang Redaksi</a>
+      </div>
+      <div class="index_phone" id="phone">
+        <div class="burger">
+          <a onclick="clickNav()">
+            &#9776;
+          </a>
+        </div>
+        <div id="list" class="sidelist">
+          <div class="menlist_phone">
+            <a class="dropdown_phone" onclick="phoneClick(0)">Sekolah</a>
+            <div class="dropdown-content-phone">
+              <a href="sekolah/profil/profil.html">Profil Sekolah</a>
+              <a href="sekolah/org/org.html">Organisasi</a>
+              <a href="sekolah/kata/kata.html">Kata Alu-Aluam</a>
+            </div>
+          </div>
+          <a href="akt/akt.html">Aktiviti</a>
+          <div class="menlist_phone">
+            <a class="dropdown_phone" onclick="phoneClick(1)">Kokurikulum</a>
+            <div class="dropdown-content-phone">
+              <a href="koko/uni/uni.html">Uniform</a>
+              <a href="koko/club/club.html">Kelab & Persatuan</a>
+              <a href="koko/rumah/rumah.html">Rumah Sukan</a>
+            </div>
+          </div>
+          <div class="menlist_phone">
+            <a class="dropdown_phone" onclick="phoneClick(2)">Pelajar</a>
+            <div class="dropdown-content-phone">
+              <a href="pel/peng/peng.html">Pengawas</a>
+              <a href="pel/kelas/kelas.html">Kelas</a>
+              <a href="pel/has/has.html">Hasil Pelajar</a>
+              <a href="pel/majpel/majpel.html">Majlis Pelajar</a>
+            </div>
+          </div>
+          <a href="sid/sid.html">Sidang Redaksi</a>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="perkataan">
+        <h1>Emarkian</h1>
+        <p>Sebuah <span>E-Majalah</span> Sekolah SMK ST MARK</p>
+      </div>
+    </section>
+    <script>
+      var sub = document.getElementsByClassName("dropdown-content-phone");
+      function phoneClick(m) {
+        if (sub[m].style.display === "block") {
+          sub[m].style.display = "none";
+        } else {
+          sub[m].style.display = "block";
+        }
+      }
+      var x = document.getElementById("list");
+      function clickNav(){
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+  </body>
+</html>

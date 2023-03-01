@@ -1,0 +1,68 @@
+.apart{
+    background-image: linear-gradient(rgb(164, 233, 101),rgb(0,120,0));
+    margin: 3rem auto;
+    border: 1px solid green;
+    width: 200px;
+    height: 300px;
+    border-radius: 2rem;
+    box-shadow:1rem 1rem 1rem lightgreen;
+}
+.Doc_cont{
+    height: 100%;
+    width: 100%;
+}
+.Doc_cont a h4{
+    color: lightgreen;
+}
+img{
+    border-radius: 50%;
+}
+.imageblock{
+    margin-top:2rem !important;;
+    margin: auto;
+    width: 150px;
+    height: 150px;
+}
+.image{
+    margin: 0 auto;
+    height: 60%;
+    width: 100%;
+}
+.Doc_cont a{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    color: lightgreen !important;
+    text-align: center;
+    text-decoration: none;
+}
+@media screen and (min-width:1071px){
+    .apartment{
+        display: grid;
+        grid-template-columns:  auto auto auto ;
+    }
+}
+@media screen and (max-width:1070px) and (min-width:456px){
+    .apartment{
+        display: grid;
+        grid-template-columns: auto ;
+    }
+    .specialtwo{
+        display: none !important;
+    }
+    .specialone{
+        display: block !important;
+    }
+}
+@media screen and (max-width:455px){
+    .apartment{
+        display: grid;
+        grid-template-columns: auto ;
+    }
+    .apart{
+        background-image: linear-gradient(rgb(164, 233, 101),rgb(0,120,0));
+        margin:1rem auto;
+        border: 1px solid green;
+
+    }
+}
